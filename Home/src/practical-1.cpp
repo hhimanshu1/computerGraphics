@@ -8,7 +8,10 @@ int main(){
     char data[] = "C:\\MinGW\\lib\\libbgi.a";
     initgraph(&gd,&gm,data);
     outtextxy(20,20,"Himanshu Hemant");
-    putpixel(125,366,RED);
+    outtextxy(40,40,"1915034");
+    int x=getmaxx();
+    int y=getmaxy();
+    putpixel(x/2,y/2,WHITE);
     getch();
     closegraph();
     return 0;
